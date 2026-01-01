@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ai-With-ReactTodo/static/css/main.e1ff8ee1.css",
+    "main.js": "/Ai-With-ReactTodo/static/js/main.86e30953.js",
+    "index.html": "/Ai-With-ReactTodo/index.html",
+    "main.e1ff8ee1.css.map": "/Ai-With-ReactTodo/static/css/main.e1ff8ee1.css.map",
+    "main.86e30953.js.map": "/Ai-With-ReactTodo/static/js/main.86e30953.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1ff8ee1.css",
+    "static/js/main.86e30953.js"
+  ]
+}
