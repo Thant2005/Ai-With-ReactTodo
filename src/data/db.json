@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "The Art of Clean Code",
+      "author": "Sarah Jenkins",
+      "body": "Writing maintainable code is a marathon, not a sprint. Focus on readability first."
+    },
+    {
+      "id": 2,
+      "title": "Mastering React Router",
+      "author": "David Chen",
+      "body": "Version 6 introduced powerful features like data loaders and simplified nested routing."
+    },
+    {
+      "id": 3,
+      "title": "A Guide to Modern CSS",
+      "author": "Elena Rodriguez",
+      "body": "Grid and Flexbox have revolutionized layouts, making floats a thing of the past."
+    },
+    {
+      "id": 4,
+      "title": "The Future of AI",
+      "author": "Marcus Thorne",
+      "body": "Generative models are shifting how we interact with technology on a daily basis."
+    },
+    {
+      "id": 5,
+      "title": "Deep Work Habits",
+      "author": "Julian Vane",
+      "body": "Eliminating distractions is the single most effective way to increase cognitive output."
+    }
+  ]
+}
