@@ -5,10 +5,12 @@ on:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,10 +27,17 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to gh-pages branch
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v2
         with:
-          branch: gh-pages
-          folder: build
-          clean: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          path: ./build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
